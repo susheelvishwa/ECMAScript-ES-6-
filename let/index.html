@@ -18,9 +18,16 @@
     // foo()
 
 
-    foo()
-    
-    let foo = function () {
-        console.log("this is foo function ussing let variable");
-    }
+    // init()
+
+    // function init() {
+    //     console.log("hello") // This is function declaration, valid and prints hello
+    // }
+
+
+    init()
+
+    let init = () => {
+        console.log("hello")
+    } // Uncaught ReferenceError: Cannot access 'init' before initialization
 </script>
