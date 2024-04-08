@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    const
+</body>
+</html>
+
+<script>
+    init()
+
+    const init = () => {
+        console.log("hello")
+    } // Uncaught ReferenceError: Cannot access 'init' before initialization
+</script>
+
+
+<!-- 
+- Function expressions are not hoisted, which means you cannot call them before they are defined.
+- They can be anonymous, but naming them can be useful for clarity in stack traces.
+- When using **`const`**, the reference to the function cannot be changed (it's immutable). With **`var`** and
+**`let`**, you can reassign the variable to a new function or value. -->
