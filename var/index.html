@@ -14,18 +14,24 @@
     // var init = function foo(){
     //     console.log("this is foo function");
     // }
-
     // init()
 
 
 
-    init()
-
-    var init = function foo(){
-        console.log("this is foo function");
-    }
+    // init()
+    // var init = function foo(){
+    //     console.log("this is foo function");
+    // }
 
     
+    // Function Declaration:
 
+    // A function declaration defines a named function. You can identify it by the use of the function keyword followed by a name.
+
+
+    init() // Hoisted ; hence init is undefined initially
+    var init = () => {
+        console.log("hello")
+    } // Uncaught TypeError: init is not a function
 
 </script>
