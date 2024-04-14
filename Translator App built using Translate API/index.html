@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate App</title>
+</head>
+<style>
+    #container {
+        display: flex;
+        min-height: 500px;
+        padding: 5px;
+    }
+
+    #input-section,
+    #output-section {
+        flex: 1;
+        border: 1px solid #cecece;
+        margin: 5px;
+    }
+
+    #input-text {
+        height: 80%;
+        width: 98%;
+        margin-top: 30px;
+    }
+
+    #translated-text {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="input-section">
+            <!-- create button that will run translate text function, give id "translate-btn" -->
+            <button id="translate-btn" onclick="translateText()">Translate</button>
+            <!-- create input that will accept text to be translated, give id "input-text" -->
+            <textarea id="input-text"></textarea>
+        </div>
+        <div id="output-section">
+            <p id="translated-text">
+                <!-- show translated text here -->
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
